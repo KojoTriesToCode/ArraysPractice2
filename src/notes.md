@@ -89,3 +89,33 @@ for (int i=0; i < a.length; i++) {
 
     return max;
 }
+```
+
+#### Finding Average 
+
+```Java 
+public double averga (int a[]) {
+    int total = 0;
+    for (int i=0; i < a.length; i++) {
+        total += a[i];
+        }
+    return (double)total/a.length; 
+}
+```
+
+#### Search for a value 
+
+```Java 
+//wil return the index where key is found, -1 if not found 
+public int search(int a[], int key) {
+    for(int i=0; i < a.length; i++) {
+        int currentValue = a[i];
+        if(currentValue == key) //we found it!!!!
+            return i; //return WHERE you found it
+}
+
+    return -1; //if we don't find it, return -1
+}
+
+
+

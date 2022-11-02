@@ -56,6 +56,8 @@ for (int i=0; i < a.length; i++) {
 }
 ```
 
+Hello
+
 Using a for-each loop or enhanced for-loop 
 
 ```Java 
@@ -156,6 +158,8 @@ Thta makes the following array;
 and we should know that the vals.length is equal to 10, BUT the last index is euqal to 9. or in general,
 arrayName.length-1. 
 ``` 
+
+hello 
 
 
 

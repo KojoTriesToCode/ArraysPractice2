@@ -116,6 +116,46 @@ public int search(int a[], int key) {
 
     return -1; //if we don't find it, return -1
 }
+```
+
+### Array Out of Bounds Exception
+
+It occurs when you try to access 
+arrayName[arrayName.length] or
+arrayName[arrayName.length+1] or
+arrayName[arrayName.length+n]
+
+So, anytime you see something like 
+
+```Java 
+arrayName[6];
+
+Make sure 6 is less than the array length, or in general 
+
+arrayName[i];
+
+Make sure i is ALWAYS less than the array length. Let's 
+look at a concrete examle:
+
+int[] vals = new int[10];
+
+Thta makes the following array; 
+
+|index|value|
+0       0
+1       0
+2       0
+3       0
+4       0
+5       0
+6       0
+7       0
+8       0
+9       0
+
+and we should know that the vals.length is equal to 10, BUT the last index is euqal to 9. or in general,
+arrayName.length-1. 
+``` 
 
 
 
